@@ -386,19 +386,61 @@ section .title::after{
     border-radius:6px ;
     padding:25px 35px;
     text-align: center;
+    transition:all 0.3s ease;
 
 }
+/* .projects .carousel .card:hover{
+    background:#edc27e;
+} */
+/* above was looking weird */
 .projects .carousel .card .box{
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: all 0.3s ease;
+}
+.project .carousel .card:hover .box{
+    transform:scale(1.05);
+}
+/* loop k upr kuch swipe right jaisa likhna h */
+.projects .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin:10px 0 7px 0;
 }
 .projects .carousel .card img{
     height:150px;
     object-fit:cover;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     border:5px solid #edc27e;
+    transition:all 0.3s ease;
+}
+/* .projects .carousel .card:hover img{
+    border-color: #fff;
+} */ 
+
+/* above was looking weird */
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+
+}
+.owl-dot{
+    height:13px;
+    width:13px;
+    margin:0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border:2px solid #edc27e!important;
+    transition:all 0.3s ease;
+}
+.owl-dot.active{
+    width:35px;
+    border-radius:14px;
+}
+.owl-dot.active,.owl-dot:hover{
+    background:#edc27e!important;
 }
 /* responsive media query start */
 @media(max-width:1300px){
