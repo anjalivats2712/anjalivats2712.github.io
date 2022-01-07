@@ -29,12 +29,12 @@
           <a href="#">Portfo<span>lio.</span></a>
         </div>
         <ul class="menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Teams</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">PoR</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="menu-btn">
           <i class="fa fa-bars"></i>
@@ -260,20 +260,20 @@
         <div class="contact-content">
           <div class="column left">
             <div class="text">Get in Touch</div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ratione dicta dignissimos error laborum, officiis, porro incidunt minus nostrum placeat eaque delectus fugiat natus eligendi nam blanditiis odit cumque? Et.</p>
+            <p>I would be honored if I may be of any assistance to you. Feel free to reach out and drop me a line.</p>
           <div class="icons">
-            <div class="row">
+            <!-- <div class="row">
               <i class="fa fa-user"></i>
               <div class="info">
                 <div class="head">Name</div>
                 <div class="sub-title">Anjali Vats</div>
               </div>
-            </div>
+            </div> -->
             <div class="row">
               <i class="fa fa-map-marker"></i>
               <div class="info">
-                <div class="head">Address</div>
-                <div class="sub-title">Rohtak,Haryana</div>
+                <div class="head">&nbspLocation</div>
+                <div class="sub-title">&nbspRohtak,Haryana</div>
               </div>
             </div>
             <div class="row">
@@ -288,19 +288,22 @@
           <div class="column right">
             <div class="text">Message Me</div>
             <form action="#">
+              <div class="fields">
+                <div class="field name">
+                  <input type="text" placeholder="Name" required>
+                </div>
+                <div class="field email">
+                  <input type="email" placeholder="Email" required>
+                </div>
+              </div>
               <div class="field">
-                <div class="field-name">
-                  <input type="text" placeholder="Name">
-                </div>
-                <div class="field-name">
-                  <input type="email" placeholder="Email">
-                </div>
-                <div class="field-name">
-                  <input type="text" placeholder="Subject">
-                </div>
-                <div class="field textarea">
-                  textarea]
-                </div>
+                <input type="text" placeholder="Subject" required>
+              </div>
+              <div class="field textarea">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Describe Project" required></textarea>
+              </div>
+              <div class="button">
+                <button type="submit">Send Message</button>
               </div>
             </form>
           </div>
@@ -308,6 +311,10 @@
         
       </div>
     </section>
+    <!-- ^^^^^^^^FOOTER SECTION START^^^^^^^^^^ -->
+    <footer>
+      <span>Created By <a href="#">Anjali Vats</a> | <span class="fa fa-copyright"></span>2022 All right reserved.</span>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
