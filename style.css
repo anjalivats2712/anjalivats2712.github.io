@@ -43,6 +43,31 @@ html{
     cursor:pointer;
     display: none;
 }
+.scroll-up-btn{
+    position:fixed;
+    height:45px;
+    width:42px;
+    background: #1c3f4e;
+    right:30px;
+    bottom:10px;
+    text-align:center;
+    line-height: 45px;
+    color:#fff;
+    z-index:9999;
+    font-size:30px;
+    border-radius:1px;
+    cursor:pointer;
+    opacity:0;
+    pointer-events: none;
+    transition:all 0.3s ease;
+    
+}
+.scroll-up-btn.show{
+    bottom:30px;
+    opacity:1;
+    pointer-events: auto;
+
+}
 .navbar .max-width{
     display: flex;
     align-items: center;
@@ -381,6 +406,7 @@ section .title::after{
 /* projects section styling */
 .projects .title::after{
     content:"what i have made";
+    font-size: 15px;
 
 
 }
@@ -547,6 +573,59 @@ section .title::after{
 .contact .right form .button button:hover{
     color:#16313d;
     background:none;
+}
+.social-menu {
+    background-color: #fff;
+    margin-top: 30px;
+}
+.social-menu ul {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.social-menu ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+.social-menu ul li .fa {
+    color: #fff;
+    font-size: 25px;
+    line-height: 50px;
+    transition: .5s;
+}
+.social-menu ul li .fa:hover {
+    color: #ffffff;
+}
+.social-menu ul li a {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #16313d;
+    text-align: center;
+    transition: all 0.3s ease;
+    transform: translate(0,0px);
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+}
+.social-menu ul li a:hover {
+    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+.social-menu ul li:nth-child(1) a:hover {
+    background-color: #000;
+}
+.social-menu ul li:nth-child(2) a:hover {
+    background-color: #0077b5 
+}
+.social-menu ul li:nth-child(3) a:hover {
+    background-color: #e4405f;
+}
+.social-menu ul li:nth-child(4) a:hover {
+    background-color: #55acee 
 }
 /* footer section styling */
 footer{

@@ -15,14 +15,19 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     />
   </head>
   <body>
+    <div class="scroll-up-btn">
+      <i class="fa fa-angle-up"></i>
+    </div>
     <nav class="navbar">
       <div class="max-width">
         <div class="logo">
@@ -48,7 +53,7 @@
         <div class="home-content">
           <div class="text-1">Hello, Myself</div>
           <div class="text-2">Anjali Vats</div>
-          <div class="text-3">And I'm a <span>Web Developer</span></div>
+          <div class="text-3">And I'm a <span class="typing"></span></div>
           <a href="#">Hire Me</a>
         </div>
       </div>
@@ -63,7 +68,7 @@
           </div>
           <div class="column right">
             <div class="text">
-              I'm Anjali and I'm a <span>Web Developer</span>
+              I'm Anjali and I'm a <span class="typing-2">Web Developer</span>
             </div>
             <p>
               Full Name : Anjali Vats
@@ -260,33 +265,36 @@
         <div class="contact-content">
           <div class="column left">
             <div class="text">Get in Touch</div>
-            <p>I would be honored if I may be of any assistance to you. Feel free to reach out and drop me a line.</p>
-          <div class="icons">
-            <!-- <div class="row">
+            <p>
+              I would be honored if I may be of any assistance to you. Feel free
+              to reach out and drop me a line.
+            </p>
+            <div class="icons">
+              <!-- <div class="row">
               <i class="fa fa-user"></i>
               <div class="info">
                 <div class="head">Name</div>
                 <div class="sub-title">Anjali Vats</div>
               </div>
             </div> -->
-            <div class="row">
-              <i class="fa fa-map-marker"></i>
-              <div class="info">
-                <div class="head">&nbspLocation</div>
-                <div class="sub-title">&nbspRohtak,Haryana</div>
+              <div class="row">
+                <i class="fa fa-map-marker"></i>
+                <div class="info">
+                  <div class="head">&nbspLocation</div>
+                  <div class="sub-title">&nbspRohtak,Haryana</div>
+                </div>
+              </div>
+              <div class="row">
+                <i class="fa fa-envelope"></i>
+                <div class="info">
+                  <div class="head">Mail</div>
+                  <div class="sub-title">anjalivats2712@gmail.com</div>
+                </div>
               </div>
             </div>
-            <div class="row">
-              <i class="fa fa-envelope"></i>
-              <div class="info">
-                <div class="head">Mail</div>
-                <div class="sub-title">anjalivats2712@gmail.com</div>
-              </div>
-            </div>
-          </div>
           </div>
           <div class="column right">
-            <div class="text">Message Me</div>
+            <!-- <div class="text">Message Me</div>
             <form action="#">
               <div class="fields">
                 <div class="field name">
@@ -306,14 +314,36 @@
                 <button type="submit">Send Message</button>
               </div>
             </form>
+          </div> -->
+            <div class="social-menu">
+              <ul>
+                <li>
+                  <a href=""><i class="fa fa-github"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                </li>
+                
+                <!-- <li><a href=""><i class="fa fa-youtube"></i></a></li> -->
+                
+              </ul>
+            </div>
           </div>
         </div>
-        
       </div>
     </section>
     <!-- ^^^^^^^^FOOTER SECTION START^^^^^^^^^^ -->
     <footer>
-      <span>Created By <a href="#">Anjali Vats</a> | <span class="fa fa-copyright"></span>2022 All right reserved.</span>
+      <span
+        >Created By <a href="#">Anjali Vats</a> |
+        <span class="fa fa-copyright"></span>2022 All right reserved.</span
+      >
     </footer>
     <script src="script.js"></script>
   </body>
