@@ -23,7 +23,7 @@ $(document).ready(function(){
     });
     // typing text animation script
     var typed=new Typed(".typing",{
-        strings:['Web Developer',"Designer"],
+        strings:['Web Developer',"Designer","Sophomore"],
         typeSpeed:100,
         backSpeed:60,
         loop:true,

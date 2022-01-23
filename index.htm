@@ -12,21 +12,23 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <script
-      src="https://kit.fontawesome.com/a076d05399.js"
-      crossorigin="anonymous"
-    ></script>
+    
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     />
+    
+
+    
   </head>
-  <body>
+  <body onload="myfunction()">
+    <div id="loading">
+      
+    </div>
     <div class="scroll-up-btn">
       <i class="fa fa-angle-up"></i>
     </div>
@@ -38,7 +40,7 @@
         <ul class="menu">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#services">PoR</a></li>
+          <li><a href="#services">Experience</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -69,14 +71,15 @@
         <h2 class="title">About Me</h2>
         <div class="about-content">
           <div class="column left">
-            <img src="images/anjali vats.jpeg" alt="Anjali Vats" />
+            <div style="display: flex;justify-content: center;">
+              <img src="images/profile.png" alt="">
+            </div>
           </div>
           <div class="column right">
             <div class="text">
               I am an engineering sophomore in National Institute of Technology,
               Hamirpur with strong suits in Web Development and Python
               Programming.
-              <!-- I'm Anjali and I'm a <span class="typing-2">Web Developer</span> -->
             </div>
             <p>
               Date of Birth : December 27, 2001
@@ -108,7 +111,6 @@
         <div class="services-content">
           <div class="card">
             <div class="box">
-              <!-- <i class="fa fa-paint-brush"></i> -->
               <img src="images/spec logo white - Copy.png" alt="" />
               <div class="text">Executive Member at SPEC</div>
               <p style="color: #fdd758">Sept 2021-Present</p>
@@ -117,7 +119,6 @@
           </div>
           <div class="card">
             <div class="box">
-              <!-- <i class="fa fa-paint-brush"></i> -->
               <img src="images/spec logo white - Copy.png" alt="" />
               <div class="text">Volunteer at SPEC</div>
               <p style="color: #fdd758">Jan 2021-Aug 2021</p>
@@ -126,7 +127,6 @@
           </div>
           <div class="card">
             <div class="box">
-              <!-- <i class="fa fa-code"></i> -->
               <img
                 src="images/ecell White Logo copy.png"
                 class="ecell"
@@ -220,12 +220,15 @@
       <div class="max-width">
         <h2 class="title">My Projects</h2>
         <br/>
-        <div class="carousel owl-carousel">
+        <div class="carousel">
           <div class="card">
             <div class="box">
-              <a href="https://github.com/priyapahwa/Dais-Militia"
+              <div style="text-align:center;">
+                <a href="https://github.com/priyapahwa/Dais-Militia"
                 ><img src="images/dias_militia.png" alt=""
               /></a>
+              </div>
+              
               <div class="text">
                 <a
                   href="https://github.com/priyapahwa/Dais-Militia"
@@ -272,6 +275,8 @@
             </div>
           </div>
         </div>
+
+        
       </div>
     </section>
     <!-- ^^^^^^^^CONTACT SECTION START^^^^^^^^^^ -->
@@ -280,19 +285,18 @@
         <h2 class="title">Contact Me</h2>
         <div class="contact-content">
           <div class="column left">
+            <div style="display: flex;;justify-content: center;">
+              <img src="images/contact.png" style="margin-bottom: 20px;" alt="">
+            </div>
+           
+          </div>
+          <div class="column right">
             <div class="text">Get in Touch</div>
             <p>
-              I would be honored if I may be of any assistance to you. Feel free
+              I would be honored to be of any assistance to you. Feel free
               to reach out and drop me a line.
             </p>
             <div class="icons">
-              <!-- <div class="row">
-              <i class="fa fa-user"></i>
-              <div class="info">
-                <div class="head">Name</div>
-                <div class="sub-title">Anjali Vats</div>
-              </div>
-            </div> -->
               <div class="row">
                 <i class="fa fa-map-marker"></i>
                 <div class="info">
@@ -308,8 +312,6 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="column right">
             <div class="social-menu">
               <ul>
                 <li>
@@ -345,6 +347,12 @@
         <span class="fa fa-copyright"></span>2022 All right reserved.</span
       >
     </footer>
+    <script>
+      var preloaderr=document.getElementById('loading');
+      function myfunction(){
+        preloaderr.style.display="none";
+      }
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
