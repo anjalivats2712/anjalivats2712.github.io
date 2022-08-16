@@ -10,6 +10,18 @@
 html{
     scroll-behavior: smooth;
 }
+body::-webkit-scrollbar
+{
+	width: 12px;
+}
+body::-webkit-scrollbar-thumb
+{
+	border-radius: 6px;	
+	background-color: #122832;
+}
+.blue-col{
+    background-color:#122832;
+}
 
 #loading{
     height: 100vh;
@@ -17,6 +29,11 @@ html{
     background: #122832 url("images/preloader.gif") no-repeat center;
     position: fixed;
     z-index: 99999;
+}
+#progress{
+    height:1;
+    z-index: 40;
+    top:0;
 }
 .max-width{
     max-width: 1300px;
@@ -88,7 +105,8 @@ html{
 .navbar .logo a{
     color: #fff;
     font-size: 35px;
-    font-weight: 600;
+    font-weight: 450;
+    font-family: "Poppins",sans-serif;
 }
 .navbar .logo a span{
     color:#edc27e;
@@ -111,7 +129,7 @@ html{
 /* home section styling */
 .home{
     display: flex;
-    background: url("images/winter-background5.jpg");
+    background: url("images/Background.png");
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -156,7 +174,7 @@ html{
 
 /* ALL COMMON STYLING */
 section{
-    padding:100px 0;
+    padding:50px 0;
 
 }
 .about,.services,.skills,.projects,.contact,footer{
@@ -223,9 +241,12 @@ section .title::after{
 }
 .about .about-content .right{
     width: 55%;
+    background:transparent url(images/3d-fluency-snow.png) no-repeat center center;
+    background-size: 50%;
 
 }
 .about .about-content .right .text{
+   
     font-size: 18px;
     font-weight: 400;
     text-align: justify;
@@ -503,6 +524,11 @@ section .title::after{
     margin-bottom: 10px;
 
 }
+
+/* .contact .contact-content .right{
+    background:transparent url(images/3d-fluency-snow.png) no-repeat center center;
+    background-size: 60%;
+} */
 .contact .contact-content .right p{
     text-align:justify;
 }
