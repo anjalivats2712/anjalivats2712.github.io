@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Anjali Vats</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/png" href="images/posticon.png" />
+    <link rel="icon" type="image/png" href="images/ICONLOGO.png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -22,6 +23,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     />
     
+    
 
     
   </head>
@@ -32,7 +34,9 @@
     <div class="scroll-up-btn">
       <i class="fa fa-angle-up"></i>
     </div>
-    <nav class="navbar">
+    <nav class="navbar" id="header">
+      <div id="progress" class="progress"
+            style="background:linear-gradient(to right, #edc27e var(--scroll), transparent 0);"></div>
       <div class="max-width">
         <div class="logo">
           <a href="#">Anjali<span>Vats</span></a>
@@ -59,12 +63,13 @@
           <div class="text-2">Anjali Vats,</div>
           <div class="text-3">a <span class="typing"></span></div>
           <a
-            href="https://drive.google.com/file/d/1M93cgFPLcFfg8RqH3n7DFltfocJk3XXd/view?usp=sharing"
+            href="https://drive.google.com/drive/folders/1OpuB6rr9Jy7bEKQv7f2fODdwqj-vP3B1?usp=sharing"
             >View CV</a
           >
         </div>
       </div>
     </section>
+    <img src="images/waveblue2.png" alt="" style="width:100%" >
     <!-- ^^^^^^^^ABOUT SECTION START^^^^^^^^^^ -->
     <section class="about" id="about">
       <div class="max-width">
@@ -91,20 +96,23 @@
               Institution : National Institute of Technology,Hamirpur
               <br />
               <br />
-              Field of Interest : Backend Development 
+              Field of Interest : Backend Development and Programming
               <br /> 
               <br />
             </p>
             <a
-              href="https://drive.google.com/file/d/1M93cgFPLcFfg8RqH3n7DFltfocJk3XXd/view?usp=sharing"
-              >View My CV</a
+              href="https://drive.google.com/drive/folders/1OpuB6rr9Jy7bEKQv7f2fODdwqj-vP3B1?usp=sharing"
+              >View CV</a
             >
           </div>
         </div>
       </div>
+      
     </section>
+    <img src="images/wave.png" alt="" style="width:100%;display:block" >
     <!-- ^^^^^^^^SERVICES SECTION START^^^^^^^^^^ -->
     <section class="services" id="services">
+      
       <div class="max-width">
         <h2 class="title">Experience</h2>
         <br />
@@ -140,6 +148,7 @@
         </div>
       </div>
     </section>
+    <img src="images/wave20.png" alt="" style="width:100%;display:block" >
     <!-- ^^^^^^^^SKILLS SECTION START^^^^^^^^^^ -->
     <section class="skills" id="skills">
       <div class="max-width">
@@ -215,7 +224,9 @@
         </div>
       </div>
     </section>
+    
     <!-- ^^^^^^^^PROJECTS SECTION START^^^^^^^^^^ -->
+    <img src="images/wave30.png" alt="" style="width:100%;background: #122832;display:block" >
     <section class="projects" id="projects">
       <div class="max-width">
         <h2 class="title">My Projects</h2>
@@ -266,19 +277,23 @@
 
           <div class="card">
             <div class="box">
-              <img src="images/portfolio.png" alt="" />
-              <div class="text">Portfolio</div>
+              <a href="https://github.com/ankitakashyap05/Sanguine"
+                ><img src="images/sanguine.png" alt=""
+              /></a>
+              <div class="text">Sanguine</div>
               <p>
-                Designed a responsive digital resume with the fundamental
-                knowledge of Frontend web developement.
+                Contributed to Frontend Section and handled backend for a web application that helps cyberbullied victims to get justice and resume their initial mental peace.
               </p>
             </div>
           </div>
         </div>
+          
+          
 
         
       </div>
     </section>
+    <img src="images/wave20.png" alt="" style="width:100%;display:block" >
     <!-- ^^^^^^^^CONTACT SECTION START^^^^^^^^^^ -->
     <section class="contact" id="contact">
       <div class="max-width">
@@ -301,7 +316,7 @@
                 <i class="fa fa-map-marker"></i>
                 <div class="info">
                   <div class="head">&nbspLocation</div>
-                  <div class="sub-title">&nbspRohtak,Haryana</div>
+                  <div class="sub-title">&nbspRohtak, Haryana</div>
                 </div>
               </div>
               <div class="row">
@@ -352,6 +367,28 @@
       function myfunction(){
         preloaderr.style.display="none";
       }
+        var h = document.documentElement,
+        b = document.body,
+        st = 'scrollTop',
+        sh = 'scrollHeight',
+        progress = document.querySelector('#progress'),
+        scroll;
+    var scrollpos = window.scrollY;
+    var header = document.getElementById("header");
+    
+    document.addEventListener('scroll', function () { 
+        scroll = (h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight) * 100;
+        progress.style.setProperty('--scroll', scroll + '%');
+        scrollpos = window.scrollY;
+    
+        if (scrollpos > 10) {
+            header.classList.add("blue-col");
+        } else {
+            header.classList.remove("blue-col");
+    
+        }
+    
+    });
     </script>
     <script src="script.js"></script>
   </body>
